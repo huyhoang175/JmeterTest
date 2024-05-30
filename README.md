@@ -48,6 +48,44 @@ Dựa trên kết quả phân tích:
 - **HTSport** có thời gian phản hồi trung bình cao nhất, nhưng vẫn nằm trong ngưỡng chấp nhận được và không gặp lỗi.
 
 
+#API thời tiết
+![image](https://github.com/huyhoang175/JmeterTest/assets/96982807/42302c44-a7ce-4395-86f8-1afa88173287)
+### Phân Tích Kết Quả Kiểm Tra Hiệu Năng của API
+
+#### Xweather:
+
+- Thời gian phản hồi trung bình: 219.57 ms
+- Số lượng yêu cầu thành công: 101
+- Số lượng yêu cầu thất bại: 0
+- Thông lượng (Throughput): 97.42 requests/sec
+- Tốc độ xử lý dữ liệu (KB/sec): 199987.0 KB/sec
+
+#### openwt:
+
+- Thời gian phản hồi trung bình: 8254.67 ms
+- Số lượng yêu cầu thành công: 101
+- Số lượng yêu cầu thất bại: 0
+- Thông lượng (Throughput): 35.33 requests/sec
+- Tốc độ xử lý dữ liệu (KB/sec): 75286.50 KB/sec
+
+#### Tổng cộng:
+
+- Tổng số yêu cầu: 202
+- Số lượng yêu cầu thành công: 5674
+- Số lượng yêu cầu thất bại: 225
+- Thông lượng tổng cộng: 128.87 requests/sec
+- Tốc độ xử lý dữ liệu tổng cộng: 137636.75 KB/sec
+
+### Kết Luận về Hiệu Năng của API
+
+Dựa vào kết quả phân tích:
+
+- **Xweather** có thời gian phản hồi trung bình rất thấp (219.57 ms), trong khi **openwt** có thời gian phản hồi trung bình rất cao (8254.67 ms), cho thấy **Xweather** có hiệu năng tốt hơn trong việc đáp ứng yêu cầu với thời gian phản hồi thấp.
+- Cả hai API đều có tỉ lệ yêu cầu thành công là 100%, không có yêu cầu thất bại.
+- **Xweather** cũng có thông lượng và tốc độ xử lý dữ liệu cao hơn so với **openwt**, điều này cũng góp phần khẳng định hiệu năng tốt của nó so với API còn lại.
+
+
+
 
 
 
